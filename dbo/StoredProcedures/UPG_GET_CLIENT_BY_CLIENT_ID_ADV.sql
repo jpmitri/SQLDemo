@@ -1,0 +1,15 @@
+CREATE PROCEDURE [DBO].[UPG_GET_CLIENT_BY_CLIENT_ID_ADV]
+(
+@P__CLIENT_ID BIGINT
+)
+AS
+BEGIN
+SET NOCOUNT ON
+----------------------------
+SELECT * 
+FROM [DBO].[UDFG_GET_CLIENT_BY_CLIENT_ID_ADV](@P__CLIENT_ID)
+----------------------------
+END
+
+GO
+

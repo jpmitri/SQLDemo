@@ -1,0 +1,18 @@
+CREATE PROCEDURE [DBO].[UPG_GET_OWNER_BY_OWNER_ID_LIST]
+(
+@P__OWNER_ID_LIST VARCHAR(8000)
+)
+AS
+BEGIN
+SET NOCOUNT ON
+----------------------------
+SELECT *
+FROM [DBO].[UDFG_GET_OWNER_BY_OWNER_ID_LIST]
+(
+@P__OWNER_ID_LIST
+)
+----------------------------
+END
+
+GO
+

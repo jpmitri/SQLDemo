@@ -1,0 +1,18 @@
+CREATE PROCEDURE [DBO].[UPG_GET_UPLOADED_FILE_BY_REL_ENTITY]
+(
+@P__REL_ENTITY NVARCHAR(100)
+)
+AS
+BEGIN
+SET NOCOUNT ON
+-------------------------------
+SELECT *
+FROM [DBO].[UDFG_GET_UPLOADED_FILE_BY_REL_ENTITY]
+(
+@P__REL_ENTITY
+)
+-------------------------------
+END
+
+GO
+
